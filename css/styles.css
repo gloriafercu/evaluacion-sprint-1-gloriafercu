@@ -32,7 +32,7 @@ header {
 .logo img {
   position: relative;
   display: flex;
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-left: 20px;
   padding: 10px;
@@ -57,7 +57,7 @@ header {
 .menu ul li {
   position: relative;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   list-style-type: none;
 }
 
@@ -73,23 +73,18 @@ header {
 }
 
 
-.cover .image img {
-  position: relative;
-  display: block;
-  width: 100%;
-  /*max-width: 500px;
+.cover{
   background-image: url('../img/cover.jpeg');
   background-size: cover;
-  min-height: 400px;*/
-  height: auto;
-  /*background-position: center 50px;
-  margin:0;*/
+  background-repeat: no-repeat;
+  background-position: center -120px;
+  min-height: 740px;
 }
 
 .text{
   position: absolute;
-  left:12%;
-  top: 31%;
+  left:5%;
+  top: 30%;
   font-size: 20px;
   width: 100px;
   color: #555555;
@@ -139,7 +134,7 @@ footer .cookies {
 }*/
 
 footer {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -176,3 +171,60 @@ footer .cookies {
   margin-bottom: 0;
   justify-content: flex-start;
 }
+
+@media all and (min-width: 900px) {
+  header {
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .menu ul li {
+    font-size:18px;
+  }
+
+  .text{
+    position: absolute;
+    left:5%;
+    top: 17%;
+    font-size: 30px;
+    width: 100px;
+    color: #555555;
+    font-weight: bold;
+    display: block;
+    z-index: 1;
+  }
+
+footer {
+  font-size: 18px;
+  height: 100px;
+  }
+}
+
+@media all and (min-width:500px) and (max-width:900px){
+  header {
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .menu ul li {
+    font-size:16px;
+  }
+
+  .text{
+    position: absolute;
+    left:5%;
+    top: 17%;
+    font-size: 32px;
+    width: 100px;
+    color: #555555;
+    font-weight: bold;
+    display: block;
+    z-index: 1;
+  }
+
+footer {
+  font-size: 16px;
+  height: 120px;
+  }
+
+}
+
+/*FALTAN METER IMAGENES EN MEDIA QUERIES Y DAR ESTILO AL TEXTO Y CORREGIR MARGEN PORTADA POR ESO SE SEPARA DE LA CABECERA!!*/
