@@ -73,9 +73,22 @@ header {
 
 /*MAIN*/
 
-main {
+/*main {
   position: relative;
   margin-top: 150px;
+}*/
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  margin-top: 150px;
+  flex-direction: column;
 }
 
  .content p {
