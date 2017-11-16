@@ -41,7 +41,7 @@ header {
 .menu {
   position: relative;
   display: flex;
-  margin-right: 20px;
+  margin-right: 30px;
   flex-direction: row;
 
 
@@ -63,7 +63,7 @@ header {
 .menu ul li a {
   text-decoration: none;
   color: #555555;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .menu ul li a:hover {
@@ -96,11 +96,13 @@ header {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 30px;
   font-size: 14px;
   line-height: 25px;
   color: #555555;
+
   text-align: justify;
+  box-sizing: border-box;
 }
 
 /*FORM*/
@@ -115,32 +117,45 @@ form {
   padding: 0 15px;
   margin: 0 auto;
   font-family: 'Rubik', sans-serif;
-  border-radius:10px;
-  /*color: #555555;
-  background-color: FBFEFD;*/
 
 }
 
-input,
-textarea{
+input {
   border: 1px solid lightgrey;
-  box-shadow: 1px border-radius:10px;
+  box-shadow: 1px 1px 1px grey;
   border-radius:5px;
-  }
-
-
-label,
-input,
-textarea {
+  padding: 10px 8px;
   position: relative;
   display: block;
+  box-sizing: border-box;
   width: 100%;
   max-width: 500px;
   font-size: 14px;
+  background-color: #f5f5f5;
 }
 
+
+textarea{
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 1px grey;
+  border-radius:5px;
+  padding: 10px 8px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #f5f5f5;
+  }
+
+
 label {
+  position: relative;
+  display: block;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 div {
@@ -150,22 +165,10 @@ div {
   margin-bottom: 40px;
 }
 
-input {
-  height: 25px;
-  background-color: #f5f5f5;
-}
-
-textarea{
-  margin-bottom: 15px;
-  background-color: #f5f5f5;
-}
-
-
 input[type="submit"]{
   position: relative;
   display: inline-block;
-  width: 20%;
-  height: 30px;
+  width: 30%;
   color: white;
   font-weight: bold;
   background-color: #3cdbc0;
@@ -280,15 +283,21 @@ footer .cookies a:hover {
     margin:0;
   }
 
+  .content p  {
+    padding: 0 15px;
+  }
   .menu {
     position: relative;
     display: flex;
     padding: 10px;
-    margin-left: 20px;
+    margin-0: 30px;
     align-self: auto;
   }
   .menu ul li {
     font-size: 18px;
+  }
+  .menu ul li:first-child a{
+    margin-left: 20px;
   }
 
   footer {
