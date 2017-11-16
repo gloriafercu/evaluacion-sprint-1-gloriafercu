@@ -34,27 +34,27 @@
 
       <div>
         <label for="firstname">Nombre</label>
-        <input type="text" name="firstname" id="firstname" maxlength="30">
+        <input type="text" name="firstname" id="firstname" maxlength="30" autofocus required>
       </div>
 
       <div>
         <label for="lastname">Apellidos</label>
-        <input type="text" name="lastname" id="lastname" maxlength="60">
+        <input type="text" name="lastname" id="lastname" maxlength="60"  required>
       </div>
 
       <div>
         <label for="mail">Correo electrónico</label>
-        <input type="mail" name="mail" id="mail" maxlength="60">
+        <input type="mail" name="mail" id="mail" maxlength="60" required>
       </div>
 
       <div>
         <label for="cellphone">Teléfono móvil</label>
-        <input type="number" name="cellphone" id="cellphone" maxlength="9">
+        <input type="number" name="cellphone" id="cellphone" maxlength="9" pattern="[0-9]{9}]" required>
       </div>
 
       <div>
         <label for="message">Mensaje</label>
-        <textarea name="message" rows="6" cols="50"></textarea>
+        <textarea name="message" rows="6" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
       </div>
 
       <div>
