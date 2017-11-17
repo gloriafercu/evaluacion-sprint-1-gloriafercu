@@ -160,6 +160,7 @@ label {
 
 div {
   margin-bottom: 15px;
+
 }
 .content {
   margin-bottom: 40px;
@@ -174,6 +175,18 @@ input[type="submit"]{
   background-color: #3cdbc0;
   border: 0;
   margin-bottom: 40px;
+}
+
+form div {
+flex-direction: row;
+display: flex;
+
+
+
+}
+
+form div label {
+  width:30%;
 }
 
 

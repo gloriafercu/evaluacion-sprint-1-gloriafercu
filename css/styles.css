@@ -22,18 +22,11 @@ header {
   flex-direction: column;
 }
 
-.logo {
-  position: relative;
-  display: flex;
-  align-self: auto;
-  margin:0;
-}
+
 
 .logo img {
-  position: relative;
-  display: flex;
+
   width: 150px;
-  height: auto;
   margin-left: 20px;
   padding: 10px;
 }
@@ -183,7 +176,7 @@ footer .cookies {
   justify-content: flex-start;
 }
 
-@media all and (min-width:500px) and (max-width:900px){
+@media all and (min-width:500px){
 
   header {
     flex-direction: row;
@@ -224,10 +217,7 @@ footer {
 }
 
 @media all and (min-width: 900px) {
-  header {
-    flex-direction: row;
-    justify-content:space-between;
-  }
+
   .menu{
     margin-right:5px;
   }
@@ -239,7 +229,7 @@ footer {
     position:relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center top;
     background-image: url('../img/cover.jpeg');
     height: 100vh;
     width: 100%;
