@@ -1,2 +1,2 @@
 # evaluacion-sprint-1-gloriafercu
-evaluacion-sprint-1-gloriafercu created by GitHub Classroom
+Ejercicio de evaluación del sprint-1 en Adalab usando HTML, CSS y diseño responsive.
